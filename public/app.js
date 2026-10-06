@@ -6,7 +6,7 @@ document.querySelectorAll('.cw-swatches button').forEach((btn) => {
     btn.classList.add('active');
     cwImg.classList.add('swap');
     setTimeout(() => {
-      cwImg.src = `/.netlify/images?url=/img/${btn.dataset.img}.png&w=1100&fm=webp`;
+      cwImg.src = `/img/${btn.dataset.img}.webp`;
       document.getElementById('cw-name').textContent = btn.dataset.name;
       document.getElementById('cw-desc').textContent = btn.dataset.desc;
       cwImg.onload = () => cwImg.classList.remove('swap');
